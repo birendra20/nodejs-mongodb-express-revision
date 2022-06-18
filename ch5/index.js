@@ -105,3 +105,24 @@ import * as fs from "fs/promises";
 // } catch (error) {
 //   console.log(error);
 // }
+
+// copy file
+
+// try {
+//   await fs.copyFile("readme.txt", "copied.txt");
+// } catch (error) {
+//   console.log(error);
+// }
+
+// Get file information
+
+// try {
+//   const stats = await fs.stat(
+//     "C:\\Users\\biren\\OneDrive\\Desktop\\nodejs-mongodb-express-revision\\ch5"
+//   );
+//   console.log(stats.isDirectory());
+//   console.log(stats.isFile());
+//   console.log(stats);
+// } catch (error) {
+//   console.log(error);
+// }
