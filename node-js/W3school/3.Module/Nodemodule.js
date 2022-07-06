@@ -1,5 +1,10 @@
-// What is a Module in Node.js?
+var http = require("http");
+var dt = require("./myfirstModule");
 
-// Consider modules to be the same as JavaScript libraries.
-
-// A set of functions you want to include in your application.
+http
+  .createServer(function (req, res) {
+    res.writeHead(200, { "Content-Type": "text/html" });
+    res.write("The date and time are currently: " + dt.myDateTime());
+    res.end();
+  })
+  .listen(8080);
